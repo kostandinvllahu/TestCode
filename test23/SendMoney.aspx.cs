@@ -33,6 +33,9 @@ namespace test23
                     SqlDataAdapter sda = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     sda.Fill(dt);
+                    //KY STRING BUILDER BEN TABELEN NE CS DHE MBUSH QELIZAT ME VLERA NGA DATABAZA
+                    //PA BOOTSTRAP TABELA DEL MIRE POR KUR JA FUS BOOTSTRAP PRISHET
+                    //IKIN NDARJET MIDIS QELIZAVE
                     StringBuilder sb = new StringBuilder();
                     sb.Append("<center>");
                     sb.Append("<h1>Send Payment</h1>");
@@ -285,7 +288,7 @@ namespace test23
         public void checkTransactionId()
         {
           //  string receiverID = null;
-                            string connectionstrin = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Documents\Admindtb.mdf;Integrated Security=True;Connect Timeout=30";
+                            string connectionstrin = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Desktop\ATM-master\Admindtb.mdf;Integrated Security=True;Connect Timeout=30";
                             System.Data.SqlClient.SqlConnection conn = new SqlConnection(connectionstrin);
                             conn.Open();
                             string checkuser = "select count(*) from RequestPayment_tbl where Id ='" + txtRecID.Text + "'";

@@ -37,7 +37,7 @@ namespace test23
                     sda.Fill(dt);
                     StringBuilder sb = new StringBuilder();
                     sb.Append("<center>");
-                    sb.Append("<h1>Send Payment</h1>");
+                    sb.Append("<h1>Request Payment</h1>") ;
                     sb.Append("<hr/>");
                     sb.Append("<table border=1>");
                     sb.Append("<tr>");
